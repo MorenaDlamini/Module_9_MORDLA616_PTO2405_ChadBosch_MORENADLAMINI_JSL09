@@ -1,0 +1,137 @@
+/* General styling */
+* {
+    box-sizing: border-box;
+}    
+
+body {
+    margin: 0;
+    background: no-repeat center center fixed; 
+    background-size: cover;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 0px 0px 20px #242424;
+}
+
+/* Centering the time in the middle */
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Enables absolute positioning for other elements */
+}
+
+/* Top-left positioning for Crypto section */
+div#crypto {
+    font-size: 1.3rem;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    line-height: 1.2; /* Reduce line spacing between elements */
+}
+
+div#crypto-top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+div#crypto-top > span {
+    margin-left: 10px;
+}
+
+/* Reduce margin between crypto prices */
+div#crypto > p {
+    margin: 2px 0; /* Reduce the vertical space between the paragraphs */
+}
+
+
+/* Top-right positioning for Weather section */
+div#weather {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+div#weather > img {
+    width: 70px;
+}
+
+p.weather-city {
+    width: 100%;
+    text-align: right;
+    margin: 0;
+    margin-top: -10px;
+    font-size: 1.2rem;
+}
+
+p.weather-temp {
+    margin: 0;
+    font-size: 1.7rem;
+    margin-left: -10px;
+}
+
+/* Center the time display */
+h1.time {
+    text-align: center;
+    font-size: 5rem;
+    z-index: 1; /* Ensure it stays above other elements */
+}
+
+/* Bottom-left positioning for the Author Name */
+p#author {
+    font-size: 1rem;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+/* Bottom-right positioning for the To-Do List */
+#todo {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 5px;
+    width: 200px;
+}
+
+#todo h2 {
+    margin-top: 0;
+    color: white;
+}
+
+#todo-items {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#todo-items li {
+    color: white;
+    margin: 5px 0;
+}
+
+#new-todo {
+    width: 100%;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+#add-todo {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#add-todo:hover {
+    background-color: #45a049;
+}
